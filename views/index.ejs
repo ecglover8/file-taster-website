@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                background-color: #A32E7F;
+                color: #F8F8F8;
+                font-size: 18px;
+                text-indent: 15px;
+            }
+            input[type="submit"] {
+                background-color: #2EA38D;
+                border-radius: 10px;
+                font-size: 0.8em;
+                font-weight: 600;
+                padding: 5px 10px;
+            }
+            input[type="submit"]:hover {
+                background-color: #45A32E;
+            }
+        </style>
+        <title>File taster</title>
+    </head>
+    <body>
+        <h1>Online File Taster Microservice</h1>
+        <p>A <a href="https://en.wikipedia.org/wiki/Food_taster" target="_blank">food taster</a> is someone who tastes food before it is served to someone important, to ensure that it is not poisoned or otherwise sickness inducing. This online file taster works in sort of the same way. <em>You</em> are an important person, so someone should taste your files.</p>
+        <p>Nowadays any file can have all sorts of things wrong with it. This service will read any single uploaded file and let you know its vitals (i.e. the underlying metadata). Please give it a whirl by uploading a file below. Don't try to stick us with a virus, because we'll know it was you, that's how good we are.</p>
+        <form method="post" enctype="multipart/form-data">
+            <fieldset>
+                <input type="file" name="f_up" id="f_up" /><br /><br />
+                <input type="submit" formaction="/json" name="sendjson" id="sendjson" value="Get response as JSON" />
+                <input type="submit" formaction="/ejs" name="sendejs" id="sendejs" value="Get response in a webpage" />
+            </fieldset>
+        </form>
+    </body>
+</html>

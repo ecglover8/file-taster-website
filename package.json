@@ -1,0 +1,30 @@
+{
+  "name": "filetaster",
+  "version": "1.0.0",
+  "description": "file metadata microservice",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "file",
+    "metadata",
+    "FCC",
+    "freecodecamp",
+    "nodejs",
+    "javascript",
+    "html",
+    "css",
+    "express"
+  ],
+  "author": "Gene Glover",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "multer": "^1.3.0",
+    "multer-autoreap": "^0.1.3",
+    "path": "^0.12.7"
+  }
+}
